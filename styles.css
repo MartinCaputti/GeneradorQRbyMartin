@@ -163,6 +163,16 @@ button:disabled {
   font-weight: 600;
 }
 
+/* estilos para el boton logo*/
+.logo-upload {
+  margin: 15px 0;
+}
+
+.logo-upload input {
+  width: auto;
+  margin-left: 10px;
+}
+
 @media (max-width: 480px) {
   .color-pickers {
     grid-template-columns: 1fr;
