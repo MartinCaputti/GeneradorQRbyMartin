@@ -163,14 +163,31 @@ button:disabled {
   font-weight: 600;
 }
 
-/* estilos para el boton logo*/
 .logo-upload {
-  margin: 15px 0;
+  margin: 5px;
 }
 
 .logo-upload input {
   width: auto;
   margin-left: 10px;
+}
+
+/* Estilos para personalizar el botón de subir archivos */
+.custom-file-upload {
+  display: inline-block;
+  padding: 12px;
+  background-color: #a7b300b2;
+  color: #000000;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.custom-file-upload:hover {
+  background-color: #cec10fe1;
+}
+
+.custom-file-upload input[type="file"] {
+  display: none;
 }
 
 @media (max-width: 480px) {

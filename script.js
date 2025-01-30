@@ -10,7 +10,7 @@ document.getElementById("logo-upload").addEventListener("change", function (e) {
   reader.onload = (event) => {
     logoImage = new Image();
     logoImage.onload = () => {
-      // Regenerate QR if one already exists
+      // Regenerar QR si ya existe uno
       if (document.getElementById("qrcode").children.length > 0) {
         generateQR();
       }
@@ -112,5 +112,10 @@ document.getElementById("qr-input").addEventListener("keypress", function (e) {
   if (e.key === "Enter") generateQR();
 });
 
-// Initialize size display
+// Generar QR por defecto al cargar la página
+window.addEventListener("load", function () {
+  generateQR();
+});
+
+// Inicializar visualización de tamaño
 updateSizeDisplay(document.getElementById("size").value);

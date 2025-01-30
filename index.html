@@ -15,7 +15,7 @@
         type="text"
         id="qr-input"
         placeholder="Ingresa texto o URL"
-        data-default="https://martincaputti.com"
+        value="https://martincaputti.com"
       />
 
       <div class="settings">
@@ -37,8 +37,10 @@
       </div>
 
       <div class="logo-upload">
-        <label for="logo-upload">Subir logo (opcional):</label>
-        <input type="file" id="logo-upload" accept="image/*" />
+        <label class="custom-file-upload">
+          <input type="file" id="logo-upload" accept=".png, .jpg, .jpeg" />
+          Cargar PNG o JPG (Opcional)
+        </label>
       </div>
 
       <div class="buttons">
