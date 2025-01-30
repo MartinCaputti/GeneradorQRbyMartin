@@ -3,21 +3,54 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Generador de QRs por Martin Caputti</title>
+    <title>Generador de QRs - Martin Caputti</title>
     <link rel="stylesheet" href="styles.css" />
-
     <script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
-    <!-- QRCode.js library -->
   </head>
   <body>
     <div class="container">
-      <h1>QR Code Generator</h1>
-      <input type="text" id="qr-input" placeholder="Enter text or URL" />
-      <button onclick="generateQR()">Generate QR Code</button>
+      <h1>Mi Generador de Códigos QR</h1>
+
+      <input
+        type="text"
+        id="qr-input"
+        placeholder="Ingresa texto o URL"
+        data-default="https://martincaputti.com"
+      />
+
+      <div class="settings">
+        <div class="color-pickers">
+          <div class="color-input">
+            <label for="foreground">Color principal:</label>
+            <input type="color" id="foreground" value="#000000" />
+          </div>
+          <div class="color-input">
+            <label for="background">Color de fondo:</label>
+            <input type="color" id="background" value="#ffffff" />
+          </div>
+        </div>
+
+        <div class="size-control">
+          <label for="size">Tamaño (<span id="size-value">256</span>px):</label>
+          <input type="range" id="size" min="100" max="500" value="256" />
+        </div>
+      </div>
+
+      <div class="buttons">
+        <button class="generate-btn" onclick="generateQR()">Generar QR</button>
+        <button class="download-btn" onclick="downloadQR()" disabled>
+          Descargar QR
+        </button>
+      </div>
+
       <div id="qrcode"></div>
+
+      <div class="credits">
+        Creado por
+        <a href="https://martincaputti.com" target="_blank">Martin Caputti</a>
+      </div>
     </div>
 
     <script src="script.js"></script>
-    <!-- Link to your JavaScript file -->
   </body>
 </html>
