@@ -7,7 +7,7 @@
 
 body {
   font-family: "Segoe UI", Arial, sans-serif;
-  background-color: var(--background-color);
+  background-color: #f8f9fa;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -46,7 +46,7 @@ h1 {
 
 #qr-input:focus {
   outline: none;
-  border-color: var(--primary-color);
+  border-color: #007bff;
 }
 
 .settings {
@@ -94,7 +94,7 @@ input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   width: 20px;
   height: 20px;
-  background: var(--primary-color);
+  background: #007bff;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -131,7 +131,7 @@ button:hover {
 }
 
 .generate-btn:hover {
-  background-color: var(--hover-color);
+  background-color: #0056b3;
 }
 
 .download-btn:hover {
@@ -188,6 +188,27 @@ button:disabled {
 
 .custom-file-upload input[type="file"] {
   display: none;
+}
+
+#ingreseURL {
+  font-family: "Roboto Mono", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.025rem;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #000000;
+  border-radius: 0.3125rem;
+  -webkit-border-radius: 0.3125rem;
+  -moz-border-radius: 0.3125rem;
+  padding: 0.4375rem 0.5rem;
+  border-style: none;
+  border-width: 0rem;
+  border-color: #ef2d56;
+  -webkit-box-shadow: inset -21px 0px 23px 0px rgba(0, 64, 255, 0.62);
+  -moz-box-shadow: inset -21px 0px 23px 0px rgba(0, 64, 255, 0.62);
+  -box-shadow: inset -21px 0px 23px 0px rgba(0, 64, 255, 0.62);
 }
 
 @media (max-width: 480px) {
